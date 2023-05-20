@@ -224,7 +224,6 @@ class _HomePageState extends State<HomePage> {
               ),
               padding: const EdgeInsets.only(left: 50,right: 50,top: 30,bottom: 30),
               child: Image.asset("assets/images/article-icon-png-27.jpg",color: Colors.black26,width: MediaQuery.of(context).size.width,height: 100,),
-              // :const Icon(Icons.my_library_books_outlined,size: 100,),
             ),
           ),
 
@@ -615,7 +614,6 @@ class _HomePageState extends State<HomePage> {
             // color: Colors.grey,
             margin: const EdgeInsets.only(left: 20,right: 20,),
             child: Image.asset("assets/images/makeup1.jpg",fit:BoxFit.fill,width: MediaQuery.of(context).size.width,height: MediaQuery.of(context).size.height/4,),
-            // :const Icon(Icons.my_library_books_outlined,size: 100,),
           ),
           const SizedBox(height: 40,),
 
@@ -672,9 +670,10 @@ class _HomePageState extends State<HomePage> {
 
                 ),
               ),
-              SizedBox(
+              Container(
                 width: MediaQuery.of(context).size.width/5,
-                child: const Flexible(child: Text("Medical Calculators :",style: TextStyle(fontWeight: FontWeight.bold,),)),
+                padding: EdgeInsets.zero,
+                child: const Text("Medical Calculators :",style: TextStyle(fontWeight: FontWeight.bold,),),
               ),
               const Flexible(child: Text("Get Access to 800+ Evidenced Based Calculators"))
             ],
